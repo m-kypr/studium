@@ -1,0 +1,1 @@
+-Wall -Wextra -ansi -pedantic
