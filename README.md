@@ -1,7 +1,3 @@
-LaTeX cheat sheet:
-http://wch.github.io/latexsheet/
-
-
 books: 
 
 * the annotated turing, charles petzold
