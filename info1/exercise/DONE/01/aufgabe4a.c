@@ -9,6 +9,6 @@ void print_letters(char w[], int size) {
 
 int main()
 {
-	print_letters("PENIS", 2);
+	print_letters("TEST", 2);
 	return 0;
 }
