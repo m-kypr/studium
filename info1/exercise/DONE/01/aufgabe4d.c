@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void penis(char c[]) {
+void copy_to(char c[]) {
 	int s = sizeof(&c) + 1;
 	char b[s];
 	for (int i = 0; i < s; i++) {
@@ -15,6 +15,6 @@ void penis(char c[]) {
 }
 
 int main() {
-	penis("trump2020");
+	copy_to("trump2020");
 	return 0;
 }
