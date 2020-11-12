@@ -1,0 +1,72 @@
+a)
+	i)
+	P1: ADD S1, S1
+	P2: RÜCKGABE S1
+	ii)
+	P1: ADD S1, S1
+	P2: ADD S1, S1
+	P2: RÜCKGABE S1
+	iii)
+	P1: RÜCKGABE0 D1, S1
+	D1: 1
+	iv)
+	P1: INKREMENT S2
+	P2: SPRUNG0 P6, S2
+	P3: DEKREMENT S2
+	P4: ADD S1, S1
+	P5: SPRUNG P2
+	P6: RÜCKGABE S1	
+
+b)
+	i)
+	int a liegt in S1
+	P1: ADD S1, S1
+	P2: DEKREMENT S1
+	P3: RÜCKGABE S1
+	ii)
+	int a liegt in S1, int b liegt in S2
+	P1: ADD S1, S1
+	P2: SUB S1, S2
+	P3: RÜCKGABE0 D1, S1
+	D1: 1	
+	iii)
+	int a liegt in S1, int r liegt in S2
+	P1: INIT S2
+	P2: SPRUNG0 P9, S1
+	P3: SPRUNG0 P6, S2
+	P4: DEKREMENT S2
+	P5: SPRUNG P7	
+	P6: INKREMENT S2
+	P7: DEKREMENT S1
+	P8: SPRUNG P2
+	P9: RÜCKGABE S1
+
+c)
+	i)
+	int a liegt in S1, int b liegt in S2
+	int negate_number(int a)
+	{
+		int b;
+		b = a;
+		a = a - b;
+		a = a - b;
+		return a;		
+	}
+	ii)
+	int fun(int a, int b) 
+	{
+		int c;
+		c = b;
+		c = c - a;
+		c = c - a;
+		if (c == 0)
+		{
+			return 1;
+		}
+		return 0;
+	}
+	iii)
+	int fun(
+
+
+
