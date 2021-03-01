@@ -3,14 +3,20 @@ a)
 	P1: ADD S1, S1
 	P2: RÜCKGABE S1
 	ii)
-	P1: ADD S1, S1
-	P2: ADD S1, S1
+	P1: INIT S2
+	P2: ADD S2, S1
+	P1: ADD S1, S2
+	P2: ADD S1, S2
 	P2: RÜCKGABE S1
+	S1
+	S2 
 	iii)
 	P1: RÜCKGABE0 D1, S1
-	D1: 1
+	P2: RÜCKGABE D2
+	D1: 0
+	D2: 1
 	iv)
-	P1: INKREMENT S2
+	P1: DEKREMENT S2
 	P2: SPRUNG0 P6, S2
 	P3: DEKREMENT S2
 	P4: ADD S1, S1
@@ -28,7 +34,9 @@ b)
 	P1: ADD S1, S1
 	P2: SUB S1, S2
 	P3: RÜCKGABE0 D1, S1
-	D1: 1	
+	P4: RÜCKGABE D2
+	D1: 1
+	D2: 0
 	iii)
 	int a liegt in S1, int r liegt in S2
 	P1: INIT S2
@@ -40,33 +48,35 @@ b)
 	P7: DEKREMENT S1
 	P8: SPRUNG P2
 	P9: RÜCKGABE S1
-
 c)
 	i)
-	int a liegt in S1, int b liegt in S2
+	int a liegt in S1
 	int negate_number(int a)
 	{
-		int b;
-		b = a;
-		a = a - b;
-		a = a - b;
-		return a;		
+		return -a;		
 	}
 	ii)
-	int fun(int a, int b) 
+	int a liegt in S1, b liegt in S2
+	int doppelt_so_gross(int a, int b) 
 	{
-		int c;
-		c = b;
-		c = c - a;
-		c = c - a;
-		if (c == 0)
+		if ((2 * a) == b)
 		{
 			return 1;
 		}
 		return 0;
 	}
 	iii)
-	int fun(
+	int a liegt in S1, int b liegt in S2
+	int fun(int a)
+	{
+		int b;
+		while (a != 0)
+		{
+			b++;
+			c--:
+		}
+		return b;
+	}	
 
 
 
