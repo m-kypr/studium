@@ -1,0 +1,17 @@
+FETCH
+- Hole den Inhalt der SZ (P1) über RM nach IR
+- Update PC
+DECODE
+- Erkenne Iinit BEFEHL
+- Zerlegung in INIT Operation und S2 Operanden 
+- Eingabe der Operanden (S2) in das Speicherwerk
+EXECUTE 
+- Verarbeitung der Daten im Rechenwerk 
+- Update PC wenn Sprung Befehl
+WRITE-BACK
+- Ausgabe des Ergebnisses in das Speicherwerk 
+ 
+...Weitere Aufgaben funktioneren analog
+
+8) 
+...
